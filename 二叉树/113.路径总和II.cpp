@@ -52,11 +52,11 @@ public:
     }
 };
 
-int main()
-{
-    vector<int> tree = { 2,-1,3};
-    TreeNode* root = creatTree(tree);
-    vector<vector<int>> res = Solution().pathSum(root, 2);
-    coutvv(res);
-}
+// int main()
+// {
+//     vector<int> tree = { 2,-1,3};
+//     TreeNode* root = creatTree(tree);
+//     vector<vector<int>> res = Solution().pathSum(root, 2);
+//     coutvv(res);
+// }
 

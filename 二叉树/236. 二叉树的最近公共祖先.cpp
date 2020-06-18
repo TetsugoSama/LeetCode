@@ -21,7 +21,7 @@
 
 using namespace std;
 
-class StackAndSet {
+class Solution1 {
 public:
     bool found(TreeNode* root, TreeNode* t, stack<TreeNode*>& s)
     {
@@ -60,7 +60,7 @@ public:
     }
 };
 
-class VectorSolution {
+class Solution2 {
 public:
     bool found(TreeNode* root, TreeNode* t, vector<TreeNode*>& v)
     {
@@ -94,26 +94,26 @@ public:
     }
 };
 
-int main()
-{
-    vector<int> v = { 3, 5, 1, 6, 2, 0, 8, -1, -1, 7, 4 };
-    TreeNode a(3);
-    TreeNode b(5);
-    TreeNode c(1);
-    TreeNode d(6);
-    TreeNode e(2);
-    TreeNode f(0);
-    TreeNode g(8);
-    TreeNode h(7);
-    TreeNode i(4);
-    a.left = &b;
-    a.right = &c;
-    b.left = &d;
-    b.right = &e;
-    c.left = &f;
-    c.right = &g;
-    e.left = &h;
-    e.right = &i;
-    TreeNode* res = VectorSolution().lowestCommonAncestor(&a, &b, &i);
-    cout << res->val;
-}
+// int main()
+// {
+//     vector<int> v = { 3, 5, 1, 6, 2, 0, 8, -1, -1, 7, 4 };
+//     TreeNode a(3);
+//     TreeNode b(5);
+//     TreeNode c(1);
+//     TreeNode d(6);
+//     TreeNode e(2);
+//     TreeNode f(0);
+//     TreeNode g(8);
+//     TreeNode h(7);
+//     TreeNode i(4);
+//     a.left = &b;
+//     a.right = &c;
+//     b.left = &d;
+//     b.right = &e;
+//     c.left = &f;
+//     c.right = &g;
+//     e.left = &h;
+//     e.right = &i;
+//     TreeNode* res = VectorSolution().lowestCommonAncestor(&a, &b, &i);
+//     cout << res->val;
+// }
