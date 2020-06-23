@@ -10,6 +10,13 @@
 
 using namespace std;
 
+struct TreeNode {
+    int val;
+    TreeNode *left;
+    TreeNode *right;
+    TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ };
+
 class Solution {
 public:
     void fun(TreeNode* root, vector<vector<int>>& res, vector<int>& vec, int sum, int add)
